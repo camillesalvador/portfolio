@@ -6,22 +6,20 @@ function App() {
   // const [count, setCount] = createSignal(0);
 
   return (
-    <div class="w-[500px] mx-4 my-16 text-sm flex flex-col space-y-10">
-      <div class="profile flex flex-row items-center">
+    <div class="max-w-[500px] px-4 py-16 text-sm flex flex-col space-y-10">
+      <div class="profile grid grid-cols-4 space-x-8">
         <img
           src={avatar}
           alt="Camille Salvador Avatar"
-          class="object-cover h-[100px] w-[100px] rounded-full"
+          class="object-cover w-80 px-2 rounded-full col-span-1"
         />
-        <div class="flex">
-          <div class="ml-4">
-            <h1 class="font-bold text-xl">Camille Salvador</h1>
-            <p>Product-focused Fullstack Developer</p>
-          </div>
+        <div class="col-span-3 flex flex-col justify-center">
+          <h1 class="font-bold text-xl">Camille Salvador</h1>
+          <p class="opacity-65">Product-focused Fullstack Developer</p>
         </div>
       </div>
       <div>
-        <h2 class="font-bold">About</h2>
+        <h2 class="font-bold mb-1">About</h2>
         <p>
           A senior software developer with a passion for translating design
           concepts into fully functional UI components and pages. Specializes in
@@ -36,7 +34,7 @@ function App() {
           href="https://atbventures.com"
           title="Senior Software Developer (Web) - ATB Ventures"
           description="Currently inventing the future."
-          stack="React ⬩ Next ⬩ Nest ⬩ TS ⬩ Tailwind ⬩ GH Actions ⬩ Figma ⬩ Apigee"
+          stack="React ⬩ Next ⬩ Nest ⬩ TS ⬩ Tailwind ⬩ Material UI ⬩ Postgres ⬩ GH Actions ⬩ Figma ⬩ Apigee"
         />
         <Experience
           side="2021 - 2022"
