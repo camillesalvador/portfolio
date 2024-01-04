@@ -23,6 +23,8 @@ function Experience({
         {href ? (
           <a
             href={href}
+            target="_blank"
+            rel="noopener"
             class="flex items-center font-bold hover:underline underline-offset-2"
           >
             <span class="font-bold">{title}</span>
