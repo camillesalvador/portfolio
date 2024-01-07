@@ -1,9 +1,10 @@
-// import { createSignal } from 'solid-js';
+import { createSignal, Index } from 'solid-js';
 import avatar from './assets/avatar.png';
 import Experience from './components/Experience';
+import data from './data.json';
 
 function App() {
-  // const [count, setCount] = createSignal(0);
+  const [experiences, setExperiences] = createSignal(data.experiences);
 
   return (
     <div class="max-w-[500px] px-4 py-16 text-sm flex flex-col space-y-10">
@@ -29,50 +30,18 @@ function App() {
       </div>
       <div class="flex flex-col space-y-8">
         <h2 class="font-bold">Work Experience</h2>
-        <Experience
-          side="2022 - present"
-          href="https://atbventures.com"
-          title="Senior Software Developer (Web) - ATB Ventures"
-          description="Currently inventing the future."
-          stack="React ⬩ Next ⬩ Nest ⬩ TS ⬩ Tailwind ⬩ Material UI ⬩ Postgres ⬩ GH Actions ⬩ Figma ⬩ Apigee"
-        />
-        <Experience
-          side="2021 - 2022"
-          href="https://helcim.com"
-          title="Lead Frontend Developer - Helcim"
-          description="Led a team of front-end developers, overseeing their work, 
-            and ensuring alignment with project goals. Developed, maintained, and 
-            documented an in-house design system to enhance consistency and streamline 
-            development. Managed team recruitment and conducted training sessions to 
-            foster skill growth. Initiated library code reviews to ensure code quality 
-            and adherence to best practices."
-          stack="Vue ⬩ JS ⬩ SCSS ⬩ Gitlab ⬩ Figma ⬩ Storybook ⬩ Jest"
-        />
-        <Experience
-          side="2019 - 2021"
-          href="https://helcim.com"
-          title="Frontend Developer - Helcim"
-          description="Engineered an in-house design system using Vue.js for a major 
-          platform overhaul, enhancing visual coherence and user experience. 
-          Successfully implemented the new design system across multiple systems, 
-          ensuring a consistent look and feel at launch. Took ownership of front-end 
-          bug resolutions across all platforms, ensuring a smooth user experience. 
-          Crafted all screens for a mobile web application, optimizing for 
-          responsiveness and usability."
-          stack="Vue ⬩ JS ⬩ SCSS ⬩ Gitlab ⬩ Figma ⬩ Adobe XD ⬩ PHP ⬩ MySQL"
-        />
-        <Experience
-          side="2018 - 2019"
-          href="https://helcim.com"
-          title="Fullstack Developer - Helcim"
-          description="Developed and maintained a referral Customer Relationship 
-          Management (CRM) system within a legacy environment. Created and managed 
-          a blog CRM using Vue.js, enhancing content delivery and internal team 
-          usage. Undertook website maintenance responsibilities to ensure seamless 
-          functionality. Curated and centralized style assets into a library for 
-          streamlined global usage."
-          stack="Vue ⬩ JS ⬩ SCSS ⬩ Bitbucket ⬩ Adobe XD ⬩ PHP ⬩ MySQL"
-        />
+
+        <Index each={experiences()}>
+          {(experience) => (
+            <Experience
+              side={experience().year}
+              href={experience().link}
+              title={experience().title}
+              description={experience().description}
+              stack={experience().stack}
+            />
+          )}
+        </Index>
       </div>
     </div>
   );

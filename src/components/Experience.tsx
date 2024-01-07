@@ -1,9 +1,11 @@
 import ArrowUpRight from '../icons/ArrowUpRight';
+import { Index } from 'solid-js';
+
 interface ExperienceProps {
   side: string;
   title: string;
-  description: string;
-  stack: string;
+  description: Array<string>;
+  stack: Array<string>;
   href?: string;
 }
 
@@ -35,8 +37,21 @@ function Experience({
         ) : (
           <p>{title}</p>
         )}
-        <p class="my-2">{description}</p>
-        <p>{stack}</p>
+        <p class="my-2">
+          <Index each={description}>
+            {(item) => <span class="block mb-1">{item()}</span>}
+          </Index>
+        </p>
+        <p>
+          <Index each={stack}>
+            {(item, i) => (
+              <span>
+                {item()}
+                {i < stack.length - 1 ? ' ⬩ ' : ''}
+              </span>
+            )}
+          </Index>
+        </p>
       </div>
     </div>
   );

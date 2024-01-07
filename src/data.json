@@ -1,0 +1,68 @@
+{
+  "experiences": [
+    {
+      "year": "2022 - present",
+      "title": "Senior Software Developer (Web) - ATB Ventures",
+      "link": "https://atbventures.com",
+      "description": ["Currently inventing the future."],
+      "stack": [
+        "React",
+        "Next",
+        "Nest",
+        "TS",
+        "Tailwind",
+        "Material UI",
+        "Postgres",
+        "GH Actions",
+        "Figma",
+        "Apigee"
+      ]
+    },
+    {
+      "year": "2021 - 2022",
+      "title": "Lead Frontend Developer - Helcim",
+      "link": "https://helcim.com",
+      "description": [
+        "Led a team of front-end developers, overseeing their work, and ensuring alignment with project goals.",
+        "Participated in the design and development of new and existing features on various projects.",
+        "Developed, maintained, and documented an in-house design system to enhance consistency and streamline development.",
+        "Managed team recruitment and conducted training sessions to foster skill growth.",
+        "Initiated and performed library code reviews to ensure code quality and adherence to best practices."
+      ],
+      "stack": ["Vue", "JS", "SCSS", "Gitlab", "Figma", "Storybook", "Jest"]
+    },
+    {
+      "year": "2019 - 2021",
+      "title": "Frontend Developer - Helcim",
+      "link": "https://helcim.com",
+      "description": [
+        "Engineered an in-house design system using Vue.js for a major platform overhaul, enhancing visual coherence and user experience.",
+        "Successfully implemented the new design system across multiple systems, ensuring a consistent look and feel at launch.",
+        "Took ownership of front-end bug resolutions across all platforms, ensuring a smooth user experience.",
+        "Crafted all screens for a mobile web application, optimizing for responsiveness and usability."
+      ],
+      "stack": [
+        "Vue",
+        "JS",
+        "SCSS",
+        "Gitlab",
+        "Figma",
+        "Adobe XD",
+        "PHP",
+        "MySQL"
+      ]
+    },
+    {
+      "year": "2018 - 2019",
+      "title": "Fullstack Developer - Helcim",
+      "link": "https://helcim.com",
+      "description": [
+        "Developed and maintained a referral Customer Relationship Management (CRM) system within a legacy environment.",
+        "Created and managed a blog CRM using Vue.js, enhancing content delivery and internal team usage.",
+        "Undertook website maintenance responsibilities to ensure seamless functionality.",
+        "Curated and centralized style assets into a library for streamlined global usage."
+      ],
+      "stack": ["Vue", "JS", "SCSS", "Bitbucket", "Adobe XD", "PHP", "MySQL"]
+    }
+  ]
+}
