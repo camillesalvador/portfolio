@@ -4,7 +4,7 @@ import Experience from './components/Experience';
 import data from './data.json';
 
 function App() {
-  const [experiences, setExperiences] = createSignal(data.experiences);
+  const [experiences] = createSignal(data.experiences);
 
   return (
     <div class="max-w-[500px] px-4 py-16 text-sm flex flex-col space-y-10">
