@@ -27,8 +27,10 @@ function Experience({
             rel="noopener"
             class="flex items-center font-bold hover:underline underline-offset-2"
           >
-            <span class="font-bold">{title}</span>
-            <ArrowUpRight />
+            <span class="font-bold inline">
+              {title}
+              <ArrowUpRight />
+            </span>
           </a>
         ) : (
           <p>{title}</p>

@@ -1,6 +1,6 @@
 function ArrowUpRight() {
   return (
-    <svg width="16" height="16" fill="none" viewBox="0 0 24 24">
+    <svg width="16" height="16" fill="none" viewBox="0 0 24 24" class="inline">
       <path
         stroke="currentColor"
         stroke-linecap="round"
