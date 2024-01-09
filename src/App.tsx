@@ -1,8 +1,9 @@
 import { createSignal, Index } from 'solid-js';
 import avatar from './assets/avatar.png';
 import ListItem from './components/ListItem';
-import data from './data.json';
+import Experience from './components/Experience';
 import Link from './components/Link';
+import data from './data.json';
 
 function App() {
   const [experiences] = createSignal(data.experiences);
@@ -30,18 +31,8 @@ function App() {
         </p>
       </div>
       <div class="flex flex-col space-y-8">
-        <h2 class="font-bold">Work Experience</h2>
-
         <Index each={experiences()}>
-          {(experience) => (
-            <ListItem
-              side={experience().year}
-              href={experience().link}
-              title={experience().title}
-              description={experience().description}
-              stack={experience().stack}
-            />
-          )}
+          {(experience) => <Experience experience={experience()} />}
         </Index>
       </div>
       <div class="flex flex-col space-y-8">
@@ -49,7 +40,7 @@ function App() {
         <p>
           <span class="mr-1">
             TBA - Working on adding fun side projects in this section. But if
-            interested, check out my playground at
+            interested in older work, check out my playground at
           </span>
           <Link href="https://codepen.io/camillesalvador" text="Codepen" />
           <span class="mx-1">or at</span>

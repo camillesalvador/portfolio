@@ -4,6 +4,7 @@
       "year": "2022 - present",
       "title": "Senior Software Developer (Web) - ATB Ventures",
       "link": "https://atbventures.com",
+      "github_handle": "atb-ventures",
       "description": ["Currently inventing the future."],
       "stack": [
         "React",
@@ -22,10 +23,11 @@
       "year": "2021 - 2022",
       "title": "Lead Frontend Developer - Helcim",
       "link": "https://helcim.com",
+      "github_handle": "helcim",
       "description": [
         "Led a team of front-end developers, overseeing their work, and ensuring alignment with project goals.",
         "Participated in the design and development of new and existing features on various projects.",
-        "Developed, maintained, and documented an in-house design system to enhance consistency and streamline development.",
+        "Architectured, developed, maintained, and documented an in-house design system to enhance consistency and streamline development.",
         "Managed team recruitment and conducted training sessions to foster skill growth.",
         "Initiated and performed library code reviews to ensure code quality and adherence to best practices."
       ],
@@ -35,6 +37,7 @@
       "year": "2019 - 2021",
       "title": "Frontend Developer - Helcim",
       "link": "https://helcim.com",
+      "github_handle": "helcim",
       "description": [
         "Engineered an in-house design system using Vue.js for a major platform overhaul, enhancing visual coherence and user experience.",
         "Successfully implemented the new design system across multiple systems, ensuring a consistent look and feel at launch.",
@@ -56,6 +59,7 @@
       "year": "2018 - 2019",
       "title": "Fullstack Developer - Helcim",
       "link": "https://helcim.com",
+      "github_handle": "helcim",
       "description": [
         "Developed and maintained a referral Customer Relationship Management (CRM) system within a legacy environment.",
         "Created and managed a blog CRM using Vue.js, enhancing content delivery and internal team usage.",
