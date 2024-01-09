@@ -7,15 +7,30 @@ interface ListItemProps {
   description?: Array<string>;
   stack?: Array<string>;
   href?: string;
+  logo?: string;
 }
 
-function ListItem({ side, title, description, stack, href }: ListItemProps) {
+function ListItem({
+  side,
+  title,
+  description,
+  stack,
+  href,
+  logo,
+}: ListItemProps) {
   return (
     <div class="grid grid-cols-4 space-x-8">
       <div class="col-span-1">
         <p>{side}</p>
       </div>
       <div class="col-span-3">
+        {logo && logo !== '' && (
+          <img
+            src={logo}
+            alt={title}
+            class="w-8 h-8 block mr-2 rounded-full mb-2"
+          />
+        )}
         {href ? <Link href={href} text={title} /> : <p>{title}</p>}
         {description && (
           <p class="my-2">
