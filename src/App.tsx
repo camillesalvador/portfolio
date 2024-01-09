@@ -1,7 +1,8 @@
 import { createSignal, Index } from 'solid-js';
 import avatar from './assets/avatar.png';
-import Experience from './components/Experience';
+import ListItem from './components/ListItem';
 import data from './data.json';
+import Link from './components/Link';
 
 function App() {
   const [experiences] = createSignal(data.experiences);
@@ -33,7 +34,7 @@ function App() {
 
         <Index each={experiences()}>
           {(experience) => (
-            <Experience
+            <ListItem
               side={experience().year}
               href={experience().link}
               title={experience().title}
@@ -42,6 +43,38 @@ function App() {
             />
           )}
         </Index>
+      </div>
+      <div class="flex flex-col space-y-8">
+        <h2 class="font-bold">Side Projects</h2>
+        <p>
+          <span class="mr-1">
+            TBA - Working on adding fun side projects in this section. But if
+            interested, check out my playground at
+          </span>
+          <Link href="https://codepen.io/camillesalvador" text="Codepen" />
+          <span class="mx-1">or at</span>
+          <Link href="https://github.com/camillesalvador" text="Github" />
+        </p>
+      </div>
+      <div class="flex flex-col space-y-8">
+        <h2 class="font-bold">Links</h2>
+        <div class="flex flex-col space-y-4">
+          <ListItem
+            side="Github"
+            title="@camillesalvador"
+            href="https://github.com/camillesalvador"
+          />
+          <ListItem
+            side="Codepen"
+            title="@camillesalvador"
+            href="https://codepen.io/camillesalvador"
+          />
+          <ListItem
+            side="LinkedIn"
+            title="camillesalvador"
+            href="https://www.linkedin.com/in/camillesalvador"
+          />
+        </div>
       </div>
     </div>
   );
