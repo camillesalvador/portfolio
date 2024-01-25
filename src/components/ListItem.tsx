@@ -42,7 +42,7 @@ function ListItem(props: ListItemProps) {
               {(item, i) => (
                 <span>
                   {item()}
-                  {i < props.stack.length - 1 ? ' ⬩ ' : ''}
+                  {i < (props.stack?.length ?? 0) - 1 ? ' ⬩ ' : ''}
                 </span>
               )}
             </Index>
