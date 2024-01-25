@@ -1,15 +1,15 @@
 import ArrowUpRight from '../icons/ArrowUpRight';
 
-function Link({ href, text }: { href: string; text: string }) {
+function Link(props: { href: string; text: string }) {
   return (
     <a
-      href={href}
+      href={props.href}
       target="_blank"
       rel="noopener"
       class="inline-flex items-center font-bold hover:underline underline-offset-2"
     >
       <span class="font-bold inline">
-        {text}
+        {props.text}
         <ArrowUpRight />
       </span>
     </a>

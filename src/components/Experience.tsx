@@ -1,4 +1,4 @@
-import { createSignal, onMount } from 'solid-js';
+import { createResource } from 'solid-js';
 import ListItem from './ListItem';
 
 interface ExperienceProps {
@@ -13,9 +13,7 @@ interface ExperienceProps {
 }
 
 function Experience({ experience }: ExperienceProps) {
-  const [logo, setLogo] = createSignal('');
-
-  onMount(async () => {
+  const [logo] = createResource(async () => {
     const res = await fetch(
       `https://api.github.com/users/${experience.github_handle}`,
       {
@@ -26,7 +24,7 @@ function Experience({ experience }: ExperienceProps) {
     );
     if (!res.ok) throw new Error('Failed to fetch github profile image.');
     const data = await res.json();
-    setLogo(data.avatar_url);
+    return data.avatar_url;
   });
 
   return (

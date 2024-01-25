@@ -10,42 +10,39 @@ interface ListItemProps {
   logo?: string;
 }
 
-function ListItem({
-  side,
-  title,
-  description,
-  stack,
-  href,
-  logo,
-}: ListItemProps) {
+function ListItem(props: ListItemProps) {
   return (
     <div class="grid grid-cols-4 space-x-8">
       <div class="col-span-1">
-        <p>{side}</p>
+        <p>{props.side}</p>
       </div>
       <div class="col-span-3">
-        {logo && logo !== '' && (
+        {props.logo && props.logo !== '' && (
           <img
-            src={logo}
-            alt={title}
+            src={props.logo}
+            alt={props.title}
             class="w-8 h-8 block mr-2 rounded-full mb-2"
           />
         )}
-        {href ? <Link href={href} text={title} /> : <p>{title}</p>}
-        {description && (
+        {props.href ? (
+          <Link href={props.href} text={props.title} />
+        ) : (
+          <p>{props.title}</p>
+        )}
+        {props.description && (
           <p class="my-2">
-            <Index each={description}>
+            <Index each={props.description}>
               {(item) => <span class="block mb-1">{item()}</span>}
             </Index>
           </p>
         )}
-        {stack && (
+        {props.stack && (
           <p>
-            <Index each={stack}>
+            <Index each={props.stack}>
               {(item, i) => (
                 <span>
                   {item()}
-                  {i < stack.length - 1 ? ' ⬩ ' : ''}
+                  {i < props.stack.length - 1 ? ' ⬩ ' : ''}
                 </span>
               )}
             </Index>
