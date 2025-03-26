@@ -6,18 +6,13 @@
       "link": "https://atbventures.com",
       "github_handle": "atb-ventures",
       "description": [
-        "Led the system architecture and development of full stack applications for
-several Proof-of-Concepts (POC) and MVPs.",
-      "Spearheaded multiple architecture discovery to validate the tech solutions
-and worked with product teams to build roadmaps.",
-      "Championed the Think Build Ship process working closely with engineering
-leadership to reduce RFC cycles and improve review and feedback mechanisms.",
-      "Privacy and security first development by shifting left and architecting and
-developing apps with best practices and enterprise standards in mind.",
-      "Integrated Stripe and Flinks to enhance financial data connectivity and
-payment processing capabilities",
-      "Built applications using ReactJS, TypeScript, NextJS within Google Cloud Platform (GCP), ensuring
-scalable, maintainable, and high performing web solutions."],
+        "Led the system architecture and development of full stack applications for several Proof-of-Concepts (POC) and MVPs.",
+        "Spearheaded multiple architecture discovery to validate the tech solutions and worked with product teams to build roadmaps.",
+        "Championed the Think Build Ship process working closely with engineering leadership to reduce RFC cycles and improve review and feedback mechanisms.",
+        "Privacy and security first development by shifting left and architecting and developing apps with best practices and enterprise standards in mind.",
+        "Integrated Stripe and Flinks to enhance financial data connectivity and payment processing capabilities",
+        "Built applications using ReactJS, TypeScript, NextJS within Google Cloud Platform (GCP), ensuring scalable, maintainable, and high performing web solutions."
+      ],
       "stack": [
         "React",
         "Next",
@@ -37,15 +32,10 @@ scalable, maintainable, and high performing web solutions."],
       "link": "https://helcim.com",
       "github_handle": "helcim",
       "description": [
-        "Led a front end engineering team in developing and maintaining a robust Vue
-based UI component library.",
-        "Spearheaded library code reviews, ensuring performance optimization,
-accessibility, and maintainability.",
-        "Defined best practices for design system implementation, resulting in a more
-cohesive UI across multiple platforms ie. POS, Invoicing, Virtual Terminal,
-Recurring Payments, Payment Pages and internal systems.",
-        "Collaborated with product owners and stakeholders to define project scope
-and technical requirements.",
+        "Led a front end engineering team in developing and maintaining a robust Vue based UI component library.",
+        "Spearheaded library code reviews, ensuring performance optimization, accessibility, and maintainability.",
+        "Defined best practices for design system implementation, resulting in a more cohesive UI across multiple platforms ie. POS, Invoicing, Virtual Terminal, Recurring Payments, Payment Pages and internal systems.",
+        "Collaborated with product owners and stakeholders to define project scope and technical requirements."
       ],
       "stack": ["Vue", "JS", "SCSS", "Gitlab", "Figma", "Storybook", "Jest"]
     },
