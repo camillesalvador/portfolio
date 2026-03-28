@@ -5,7 +5,8 @@
       "title": "Software Developer - Neo Financial",
       "link": "https://neofinancial.com",
       "github_handle": "neofinancial",
-      "description": ["TBA 😁"]
+      "description": ["TBA 😁"],
+      "stack": ["React", "React Native", "TS", "GraphQL"]
     },
     {
       "year": "2022 - 2024",
